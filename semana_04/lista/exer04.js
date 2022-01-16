@@ -5,13 +5,10 @@ retorna a média aritmética independente do tamanho do array.
 Exemplo Entrada:
 [6, 8, 7] */
 
-const users = ["joao", "pedro", "Gabriel", "Mari"];
+const array = [6, 8, 7];
 
-const newUsers = users.map((user, index) => {
-  return {
-    id: index,
-    name: user,
-  };
-});
+let array2 = array.reduce(function (primeiro, valoratual) {
+  return (primeiro + valoratual) / array.length;
+}, 0);
 
-console.log(newUsers);
+console.log(Math.floor(array2));

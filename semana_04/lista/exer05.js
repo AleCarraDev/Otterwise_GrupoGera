@@ -4,32 +4,58 @@ Exemplo de Entrada:
 Exemplo de Saída:
 [1, -7, -23, “X”, -19, 13, “X”, “X”, “X”, -153, -127] */
 const users = [
-  { id: 3, name: "joao", active: false },
-  { id: 2, name: "gabriel", active: false },
-  { id: 1, name: "mari", active: true },
-  { id: 0, name: "miguel", active: false },
+  { id: 3, name: "Alessandro", active: false },
+  { id: 2, name: "Rodrigo", active: false },
+  { id: 1, name: "Gustavo", active: true },
+  { id: 0, name: "Victor", active: false },
+  { id: 4, name: "joao", active: false },
+  { id: 5, name: "Arthur", active: false },
+  { id: 6, name: "Tiago", active: true },
+  { id: 9, name: "Daniele", active: false },
+  { id: 8, name: "Carolina", active: false },
+  { id: 7, name: "Brenda", active: false },
+  { id: 10, name: "Lucas", active: true },
+  { id: 11, name: "Gian", active: false },
 ];
 
-const usersActive = users.filter((user) => {
+const usuarioAtivo = users.filter((user) => {
   return user.active === true;
 });
 
-const usersDesactive = users.filter((user) => {
+const usuarioInativo = users.filter((user) => {
   return user.active === false;
 });
 
-const someUsersActive = users.some((user) => {
+const userSome = users.some((user) => {
   return user.active === true;
 });
 
-const orderedArray = users.sort((a, b) => {
+const userSort = users.sort((a, b) => {
   return a.id - b.id;
 });
 
-console.log(usersActive);
+console.log(usuarioAtivo);
 
-console.log(usersDesactive.length);
+console.log(usuarioInativo.length);
 
-console.log(someUsersActive);
+console.log(userSome);
 
-console.log(orderedArray);
+console.log(userSort);
+
+/*// 5 - Escreva um programa para substituir os elementos pares pelo valor “X”.
+// Exemplo de Entrada:
+// [1, -7, -23, 22, -19, 13, 10, -8, 52, -153, -127]
+// Exemplo de Saída:
+// [1, -7, -23, “X”, -19, 13, “X”, “X”, “X”, -153, -127]
+
+const numbers = [1, -7, -23, 22, -19, 13, 10, -8, 52, -153, -127]
+
+const replacePar = numbers.map((num) => {
+  if (num % 2 === 0) {
+    return 'X'
+  } else {
+    return num
+  }
+})
+
+console.log(replacePar) */

@@ -7,9 +7,9 @@ Exemplo de Entrada:
 Exemplo de Saída:
 O valor foi encontrado no Array. */
 
-const testArray = [1, 3, -12, 33, -1, 9, 110, -1168, 252, -15253, 2127];
+const array = [1, 3, -12, 33, -1, 9, 110, -1168, 252, -15253, 2127];
 
-const find = testArray.some((number) => {
+const find = array.some((number) => {
   if (number === 9) return "O valor foi encontrado no Array";
   else "O valor não foi encontrado no Array";
 });
