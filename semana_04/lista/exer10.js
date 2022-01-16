@@ -17,7 +17,7 @@ const newArray3 = array.map((value1) => {
 });
 
 let finalArray = newArray3.filter((value) => {
-  return value > 10 || value < -1;
+  return value != 0;
 });
 
 console.log(finalArray);
