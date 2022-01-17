@@ -7,70 +7,56 @@ funcionalidades abaixo.
     funcionalidades abaixo.
 */
 
-const market = [
+const extraMarket = [
   {
-    cod: 128,
-    name: "Notebook Asus 16gb + SSD 480Gb",
-    stock: 15,
-    price: 8980.45,
-    category: "electronics",
+    cod: 10,
+    name: "Pneu 15",
+    stock: 1500,
+    price: 799.99,
+    category: "Car",
   },
   {
-    cod: 222,
-    name: "Xbox Séries X 1TB",
-    stock: 8,
-    price: 4200,
-    category: "Games",
+    cod: 20,
+    name: "Iphone 11",
+    stock: 150,
+    price: 4.599,
+    category: "Smartphone",
   },
   {
-    cod: 33,
-    name: "T-Shirt Fluminense Home Kit 21-22 tam: M",
-    stock: 3,
-    price: 250,
-    category: "sports",
+    cod: 30,
+    name: "SmartTv 50 Polegadas",
+    stock: 300,
+    price: 3.799,
+    category: "Eletronics",
   },
 ];
 
-function sortByName(array) {
+function nomeProduto(array) {
   const level = {
-    ["Notebook Asus 16gb + SSD 480Gb"]: 0,
-    ["T-Shirt Fluminense Home Kit 21-22 tam: M"]: 1,
-    ["Xbox Séries X 1TB"]: 2,
+    ["Pneu 15"]: 0,
+    ["Iphone 11"]: 1,
+    ["SmarTV 50 Polegadas"]: 2,
   };
 
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (level[array[i].name] < level[array[j].name]) {
-        temporary = array[i];
-        array[i] = array[j];
-        array[j] = temporary;
+  for (let index = 0; index < array.length; index++) {
+    for (let index2 = 0; index2 < array.length; index2++) {
+      if (level[array[index].name] < level[array[index2].name]) {
+        subName = array[index];
+        array[index] = array[index2];
+        array[index2] = subName;
       }
     }
   }
   console.log(array);
 }
 
-function sortByCode(array) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (array[i].cod < array[j].cod) {
-        temporary = array[i];
-        array[i] = array[j];
-        array[j] = temporary;
-      }
-    }
-  }
-
-  console.log(array);
-}
-
-function sortByStock(array) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (array[i].stock < array[j].stock) {
-        temporary = array[i];
-        array[i] = array[j];
-        array[j] = temporary;
+function codigoProduto(array) {
+  for (let index = 0; index < array.length; index++) {
+    for (let index2 = 0; index2 < array.length; index2++) {
+      if (array[index].cod < array[index2].cod) {
+        subName = array[index];
+        array[index] = array[index2];
+        array[index2] = subName;
       }
     }
   }
@@ -78,13 +64,13 @@ function sortByStock(array) {
   console.log(array);
 }
 
-function sortByPrice(array) {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (array[i].price < array[j].price) {
-        temporary = array[i];
-        array[i] = array[j];
-        array[j] = temporary;
+function estoqueProduto(array) {
+  for (let index = 0; index < array.length; index++) {
+    for (let index2 = 0; index2 < array.length; index2++) {
+      if (array[index].stock < array[index2].stock) {
+        subName = array[index];
+        array[index] = array[index2];
+        array[index2] = subName;
       }
     }
   }
@@ -92,31 +78,45 @@ function sortByPrice(array) {
   console.log(array);
 }
 
-function sortByCategory(array) {
+function precoProduto(array) {
+  for (let index = 0; index < array.length; index++) {
+    for (let index2 = 0; index2 < array.length; index2++) {
+      if (array[index].price < array[index2].price) {
+        subName = array[index];
+        array[index] = array[index2];
+        array[index2] = subName;
+      }
+    }
+  }
+
+  console.log(array);
+}
+
+function categoriaProduto(array) {
   const level = {
-    electronics: 0,
-    games: 1,
-    sports: 2,
+    Car: 0,
+    Smartphone: 1,
+    Eletronics: 2,
   };
 
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (level[array[i].category] < level[array[j].category]) {
-        temporary = array[i];
-        array[i] = array[j];
-        array[j] = temporary;
+  for (let index = 0; index < array.length; index++) {
+    for (let index2 = 0; index2 < array.length; index2++) {
+      if (level[array[index].category] < level[array[index2].category]) {
+        subName = array[index];
+        array[index] = array[index2];
+        array[index2] = subName;
       }
     }
   }
   console.log(array);
 }
 
-sortByName(market);
+nomeProduto(extraMarket);
 
-sortByCode(market);
+codigoProduto(extraMarket);
 
-sortByStock(market);
+estoqueProduto(extraMarket);
 
-sortByPrice(market);
+precoProduto(extraMarket);
 
-sortByCategory(market);
+categoriaProduto(extraMarket);
