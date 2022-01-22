@@ -1,11 +1,13 @@
-import { inputCep, searchFromCep } from "console-input";
+import { input } from "console-input";
 import axios from "axios";
 
-const searchFromCep = async (cep) => {
+export const inputCep = () => input("Digite seu cep: ");
+
+export const searchFromCep = async (cep) => {
   try {
     const { data } = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
     return data;
-  } catch (erro) {
-    consoile.log("Erro");
+  } catch (error) {
+    console.log("Ocorreu um erro");
   }
 };
