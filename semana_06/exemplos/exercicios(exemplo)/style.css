@@ -1,0 +1,14 @@
+h1 {
+  color: chartreuse;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+}
+p {
+  font-size: 4rem;
+  font-style: oblique;
+  line-height: 60px;
+}
+div {
+  padding: 30px;
+  width: 400px;
+}
