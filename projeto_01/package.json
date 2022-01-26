@@ -1,0 +1,17 @@
+{
+  "name": "projeto_01",
+  "version": "1.0.0",
+  "description": "primeiro projeto",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleCarraDev/Otterwise_GrupoGera.git"
+  },
+  "author": "Alessandro Carra",
+  "license": "ISC",
+  "dependencies": {}
+}
