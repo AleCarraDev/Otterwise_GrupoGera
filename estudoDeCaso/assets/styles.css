@@ -6,59 +6,73 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 .header {
-  background-image: url();
+  background-image: url("./images/header-bg.png");
   background-position: right top;
-  /* height: 300px;
-  padding: 30px; */
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.navBar {
+
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 12px o;
+  padding: 12px 0;
 }
-.navBar .container {
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navBar-links {
+
+.navbar-links {
   display: flex;
   gap: 60px;
 }
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #505f98;
+}
+
 .logo {
   font-weight: 900;
   font-size: 26px;
   line-height: 38px;
   color: #37447e;
 }
+
 .container {
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
 }
+
 .intro {
   width: 50%;
 }
+
 .intro-title {
   font-size: 50px;
   line-height: 66px;
   color: #091133;
   margin-bottom: 20px;
 }
+
 .intro-description {
   font-size: 18px;
   line-height: 30px;
   color: #505f98;
   margin-bottom: 69px;
 }
-/*BEM CSS*/
+
 .intro-buttons {
   display: flex;
   gap: 30px;
@@ -66,7 +80,6 @@ body {
 
 .button {
   line-height: 26px;
-  border-radius: 2px;
   font-size: 16px;
   border: 2px solid #111b47;
   border-radius: 2px;
@@ -78,12 +91,14 @@ body {
   color: white;
 }
 
-.button__outline {
+.button__outlined {
   background-color: transparent;
   color: #091133;
 }
+
 .sad-woman {
   display: flex;
+  gap: 30px;
   align-items: center;
   padding: 109px 0;
 }
@@ -92,14 +107,28 @@ body {
   display: flex;
   gap: 30px;
 }
+
 .sad-woman-content-title {
   font-size: 36px;
   line-height: 48px;
   color: #091133;
 }
+
 .sad-woman-content-description {
   font-size: 16px;
   line-height: 26px;
   color: #6f7cb2;
-  padding: 80px;
+  padding-bottom: 80px;
+}
+
+.sad-woman-blocks-item-title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
+
+.sad-woman-blocks-item-description {
+  font-size: 12px;
+  line-height: 18px;
+  color: #5d6970;
 }
