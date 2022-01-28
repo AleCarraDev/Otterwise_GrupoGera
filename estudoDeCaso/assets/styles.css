@@ -132,3 +132,29 @@ body {
   line-height: 18px;
   color: #5d6970;
 }
+
+.woman-letter-conteiner {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 109px 0;
+  flex-direction: row-reverse;
+}
+.woman-image {
+  width: 480px;
+  height: 315, 85px;
+  top: 1974px;
+  left: 191px;
+}
+.woman-letter-dois {
+  display: flex;
+  width: 1440px;
+  height: 569px;
+  top: 1852px;
+  left: -4px;
+}
+.woman-letter-content-description {
+  display: flex;
+  gap: 30px;
+  /* align-items: center; */
+}
