@@ -1,0 +1,83 @@
+.html {
+  background-color: darkcyan;
+}
+.h1 {
+}
+
+.first-button {
+  background-color: darkcyan;
+}
+.first-button:hover {
+  background-color: darkgoldenrod;
+}
+
+.list-item-one {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-two {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-tree {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-four {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-five {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-six {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-seven {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-eigth {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-nine {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}
+.list-item-ten {
+  background-color: #ac2121;
+
+  transition: 0.5s;
+
+  opacity: 0.7;
+}

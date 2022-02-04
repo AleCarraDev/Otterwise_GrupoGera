@@ -1,0 +1,19 @@
+{
+  "name": "semana_07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleCarraDev/Otterwise_GrupoGera.git"
+  },
+  "author": "Alessandro Carra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleCarraDev/Otterwise_GrupoGera/issues"
+  },
+  "homepage": "https://github.com/AleCarraDev/Otterwise_GrupoGera#readme"
+}

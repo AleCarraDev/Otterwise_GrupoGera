@@ -1,0 +1,15 @@
+h1 {
+  color: red;
+}
+/* TABLET */
+@media (min-width: 768px) {
+  h1 {
+    color: blue;
+  }
+}
+/* DESKTOP */
+@media (min-width: 1024px) {
+  h1 {
+    color: green;
+  }
+}
