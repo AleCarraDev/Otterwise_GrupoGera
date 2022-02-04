@@ -1,83 +1,43 @@
-.html {
-  background-color: darkcyan;
-}
-.h1 {
+h1 {
+  color: blue;
 }
 
-.first-button {
-  background-color: darkcyan;
+.button {
+  border: none;
+  padding: 5px 10px;
+  background-color: aquamarine;
 }
-.first-button:hover {
-  background-color: darkgoldenrod;
+
+.button:hover {
+  background-color: aqua;
 }
 
-.list-item-one {
-  background-color: #ac2121;
-
-  transition: 0.5s;
-
-  opacity: 0.7;
+.button:disabled {
+  background-color: bisque;
 }
-.list-item-two {
-  background-color: #ac2121;
 
-  transition: 0.5s;
-
-  opacity: 0.7;
+.list {
+  background-color: blanchedalmond;
+  padding: 20px;
 }
-.list-item-tree {
-  background-color: #ac2121;
 
-  transition: 0.5s;
-
-  opacity: 0.7;
+.list:empty {
+  display: none;
 }
-.list-item-four {
-  background-color: #ac2121;
 
-  transition: 0.5s;
-
-  opacity: 0.7;
+.list-item {
+  font-size: 20px;
+  list-style: none;
 }
-.list-item-five {
-  background-color: #ac2121;
 
-  transition: 0.5s;
-
-  opacity: 0.7;
+.list-item:first-child {
+  color: blueviolet;
 }
-.list-item-six {
-  background-color: #ac2121;
 
-  transition: 0.5s;
-
-  opacity: 0.7;
+.list-item:last-child {
+  color: blueviolet;
 }
-.list-item-seven {
-  background-color: #ac2121;
 
-  transition: 0.5s;
-
-  opacity: 0.7;
-}
-.list-item-eigth {
-  background-color: #ac2121;
-
-  transition: 0.5s;
-
-  opacity: 0.7;
-}
-.list-item-nine {
-  background-color: #ac2121;
-
-  transition: 0.5s;
-
-  opacity: 0.7;
-}
-.list-item-ten {
-  background-color: #ac2121;
-
-  transition: 0.5s;
-
-  opacity: 0.7;
+.list-item:nth-child(2) {
+  color: blueviolet;
 }
