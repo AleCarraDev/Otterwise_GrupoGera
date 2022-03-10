@@ -10,7 +10,7 @@ function ExemploUseEffect(props) {
   useEffect(() => {
     const request = async () => {
       const user = await axios.get(
-        `https://jsonplaceholder.typicode.com/users/${userId}`
+        `https://jsonplaceholder.typicode.com/users/${userId}`,
       );
       console.log(user);
     };

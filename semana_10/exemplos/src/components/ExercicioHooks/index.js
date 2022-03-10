@@ -12,7 +12,7 @@ function ExercicioHooks() {
   useEffect(() => {
     const request = async () => {
       const resp = await axios.get(
-        `https://jsonplaceholder.typicode.com/${resource}`
+        `https://jsonplaceholder.typicode.com/${resource}`,
       );
       setResponse(resp.data);
     };
